@@ -1,0 +1,345 @@
+/* Assuming this is part of your HomePage.css or another relevant CSS file */
+
+.hero {
+    background-color: #54BA9E;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero h1 {
+    font-size: 50px !important ;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 1.25em !important;
+    font-weight: 500;
+
+}
+
+.main1 {
+    background-color: #54BA9E;
+    color: white;
+    padding: 20px;
+    text-align: left;
+}
+
+.c1 {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.c1 img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+.c1 p {
+    padding-top: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Add text shadow */
+}
+
+
+.p1 {
+    background: linear-gradient(to bottom, #c0e6de, #6cb5a9);
+    padding: 20px;
+    border-radius: 8px;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.p1 h2 {
+    color: #267a6e;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.p1 p {
+    font-size: em;
+    margin-bottom: 20px;
+}
+
+.p1 span {
+    color: #267a6e;
+    font-size: 1em;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.p1 span:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (min-width: 576px) {
+    .main1 {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    
+    .p1 {
+        height: auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .hero h1 {
+        font-size: 3.5em;
+    }
+    
+    .hero p {
+        font-size: 1.5em;
+    }
+    
+    .main1 {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    
+    .c1 {
+        flex-direction: row;
+    }
+    
+    .c1 p {
+        padding-top: 150px;
+    }
+    
+    .p1 {
+        height: auto;
+    }
+}
+
+@media (min-width: 992px) {
+    .hero h1 {
+        font-size: 4em;
+    }
+    
+    .hero p {
+        font-size: 1.75em;
+    }
+    
+    .main1 {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    
+    .c1 p {
+        padding-top: 0;
+        padding-left: 20px;
+    }
+    
+    .p1 {
+        height: auto;
+    }
+}
+
+@media (min-width: 1200px) {
+    .hero h1 {
+        font-size: 4.5em;
+    }
+    
+    .hero p {
+        font-size: 2em;
+    }
+    
+    .main1 {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+    
+    .c1 p {
+        padding-top: 0;
+        padding-left: 20px;
+    }
+    
+    .p1 {
+        height: auto;
+    }
+}
+/* Styles for the .c1 container */
+.c1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align the items */
+    padding: 20px;
+    text-align: center; /* Center align the text */
+}
+
+/* Styles for the image inside .c1 */
+.c1 img {
+    max-width: 100%; /* Ensure the image doesn't overflow its container */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 8px; /* Add rounded corners for a professional look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    margin-bottom: 20px; /* Add some space below the image */
+}
+
+/* Responsive styles for larger screens */
+@media (min-width: 768px) {
+    .c1 {
+        flex-direction: row;
+        justify-content: center; /* Center the content horizontally */
+        text-align: left; /* Left align the text on larger screens */
+    }
+    
+    .c1 p {
+        flex: 1;
+        padding-left: 20px; /* Add some space between the image and the text */
+        padding-top: 0; /* Remove the top padding */
+    }
+    
+    .c1 img {
+        max-width: 50%; /* Limit the image width to 50% of the container */
+        margin-bottom: 0; /* Remove the bottom margin */
+    }
+}
+#p1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     /* Ensure items stack vertically */
+  }
+  
+  .s1 {
+    height: 100px;
+    width: 80%;
+    display: flex; /* Use flexbox for the inner elements */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin: 10px 0; /* Add some space between the boxes */
+  }
+  .s2 {
+    height: 150px;
+    width: 80%;
+    background-color: #78d68b;
+    display: flex; /* Use flexbox for the inner elements */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin: 10px 2px; /* Add some space between the boxes */
+  }
+  #p2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+     /* Ensure items stack vertically */
+  }
+  .logo {
+    width: 100px; /* Adjust the size as needed */
+    height: auto;
+  }
+  .logo-footer {
+    width: 100px; /* Adjust the width as needed */
+    height: auto;
+  }
+  /* Container for the video section */
+.video-section {
+    margin-top: 20px; /* Add margin for spacing */
+  }
+  
+  /* Flexbox container for the videos */
+  .video-row {
+    display: flex;
+    justify-content: space-between; /* Adjust spacing between videos */
+    gap: 20px; /* Space between videos */
+  }
+  
+  /* Flex item for each video */
+  .video-item {
+    flex: 1; /* Ensure each video takes up equal space */
+    min-width: 0; /* Prevent overflow issues */
+  }
+  
+  /* Make iframes responsive */
+  .video-item iframe {
+    width: 100%; /* Full width of its container */
+    height: 315px; /* Fixed height for uniformity */
+    border: none; /* Remove border */
+  }
+  .hero h1 {
+    font-size: 50px !important;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add text shadow */
+}
+
+.hero p {
+    font-size: 1.25em !important;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Add text shadow */
+}
+
+.p1 h2 {
+    color: #267a6e;
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add text shadow */
+}
+
+.p1 p {
+    font-size: 1em;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Add text shadow */
+}
+/* Styles for the .c1 container */
+.c1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align the items */
+    padding: 20px;
+    text-align: center; /* Center align the text */
+    background-color: #45d5ce; /* Light background color for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-bottom: 20px; /* Add space below */
+    background: linear-gradient(to bottom, #aae0d5, #54BA9E);
+
+}
+
+/* Styles for the image inside .c1 */
+.c1 img {
+    max-width: 90%; /* Slightly smaller max width for better fit */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Add rounded corners for a professional look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    margin-bottom: 20px; /* Add some space below the image */
+}
+
+/* Text styling for .c1 */
+.c1 p {
+    padding-top: 20px;
+    font-size: 1.2em; /* Slightly larger font size */
+    line-height: 1.5; /* Improved readability */
+    color: #333; /* Darker text color for better contrast */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Add text shadow */
+}
+
+/* Responsive styles for larger screens */
+@media (min-width: 768px) {
+    .c1 {
+        flex-direction: row;
+        justify-content: space-around; /* Center the content horizontally */
+        text-align: left; /* Left align the text on larger screens */
+        padding: 40px; /* Increase padding for more breathing room */
+    }
+    
+    .c1 p {
+        flex: 1;
+        padding-left: 30px; /* Add some space between the image and the text */
+        padding-top: 0; /* Remove the top padding */
+    }
+    
+    .c1 img {
+        max-width: 40%; /* Limit the image width to 40% of the container */
+        margin-bottom: 0; /* Remove the bottom margin */
+    }
+}

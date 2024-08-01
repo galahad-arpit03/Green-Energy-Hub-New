@@ -1,38 +1,148 @@
-.App {
+/* App.css */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #468585;
+  color: white;
+  position: relative;
+}
+
+.navbar-logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  transition: max-height 0.3s ease;
+}
+
+.navbar-links li {
+  margin-left: 20px;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Hamburger button */
+.navbar-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.navbar-toggle-icon {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    background-color: #468585;
+  }
+
+  .navbar-links.active {
+    max-height: 500px; /* Adjust as needed */
+  }
+
+  .navbar-links li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-logo a {
+    font-size: 1.2em;
+  }
+
+  .navbar-links a {
+    font-size: 1em;
+  }
+}
+
+.footer {
+  background-color: #468585 !important; 
+  color: white;
+  padding: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.footer a {
   color: white;
+  text-decoration: none;
+}
+a{
+  text-decoration: none;
+}
+.nav-link {
+  color: #ffffff !important; /* Makes the text color white */
+  font-weight: bold; /* Makes the text bold for better visibility */
+  transition: color 0.3s ease; /* Adds a smooth transition effect */
 }
 
-.App-link {
-  color: #61dafb;
+.nav-link:hover {
+  color: #f0f0f0 !important; /* Changes the color on hover to a lighter shade */
+}
+.nav-link {
+  color: #ffffff !important; /* White color for links */
+  font-weight: bold; /* Bold text for better visibility */
+  transition: color 0.3s ease; /* Smooth transition effect */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-link:hover {
+  color: #f0f0f0 !important; /* Lighter shade on hover */
+}
+
+.nav-link.active {
+  color: 50B498 !important; /* Gold color for active link */
+  border-bottom: 2px solid #9CDBA6; /* Border to indicate active status */
+}
+.nav-link {
+  color: #ffffff !important; /* White color for links */
+  font-weight: bold; /* Bold text for better visibility */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease; /* Smooth transition effect */
+}
+
+.nav-link:hover {
+  color: #f0f0f0 !important; /* Lighter shade on hover */
+  text-decoration: none; /* Ensure underline is removed on hover */
+}
+
+.nav-link.active {
+
+  text-decoration: none; /* Ensure active link is not underlined */
 }
