@@ -6,7 +6,6 @@ import './AboutUs.css';
 import teamImage from '../assets/team.png'; // Replace with an appropriate team image
 import missionImage from '../assets/mission.png'; // Replace with an appropriate mission image
 // import historyImage from '../assets/history.png'; // Replace with an appropriate history image
-import { Link } from 'react-router-dom';
 
 const AboutUs = () => {
   return (

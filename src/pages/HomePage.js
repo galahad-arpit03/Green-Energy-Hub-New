@@ -4,11 +4,23 @@ import React from "react";
 import "./HomePage.css";
 import treeImage from "../assets/tree.png";
 import { Link } from "react-router-dom";
+import { Container } from "react-bootstrap";
+
 
 const HomePage = () => {
   return (
     <div>
-     
+       <header
+        className="hero bg text-white text-center py-5"
+        style={{ background: "#54BA9E" }}
+      >
+        <Container>
+          <h1 className="display-4">Empowering  a  Sustainable  Future</h1>
+          <p className="lead">
+          Connecting you with renewable energy  resources and community initiatives          </p>
+        </Container>
+      </header>
+      
       <main className="main1">
         <div className="c1">
           <img src={treeImage} alt="tree" />

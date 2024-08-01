@@ -343,3 +343,7 @@
         margin-bottom: 0; /* Remove the bottom margin */
     }
 }
+#p1{
+        background: linear-gradient(to bottom, #aae0d5, #54BA9E);
+
+}

@@ -1,9 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, NavLink } from 'react-router-dom';
 import RenewableEnergyDirectory from './pages/RenewableEnergyDirectory';
-import RenewableEnergy from './pages/RenewableEnergy';
-import EducationalResources from './pages/EducationalResources';
-import CommunityProjects from './pages/CommunityProjects';
 import EnergyEfficiencyTools from './pages/EnergyEfficiencyTools';
 import Contacts from './pages/Contacts';
 import AboutUs from './pages/AboutUs';
@@ -24,9 +21,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/renewable-energy-directory" element={<RenewableEnergyDirectory />} />
-          <Route path="/renewable-energy" element={<RenewableEnergy />} />
-          <Route path="/educational-resources" element={<EducationalResources />} />
-          <Route path="/community-projects" element={<CommunityProjects />} />
+
           <Route path="/energy-efficiency" element={<EnergyEfficiencyTools />} />
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/about-us" element={<AboutUs />} />
@@ -52,15 +47,7 @@ const Navbar = () => {
             <li className="nav-item">
               <NavLink className="nav-link" to="/renewable-energy-directory" activeClassName="active">Renewable Energy Directory</NavLink>
             </li>
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/renewable-energy" activeClassName="active">Renewable Energy</NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/educational-resources" activeClassName="active">Educational Resources</NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/community-projects" activeClassName="active">Community Projects</NavLink>
-            </li>
+            
             <li className="nav-item">
               <NavLink className="nav-link" to="/energy-efficiency" activeClassName="active">Energy Efficiency</NavLink>
             </li>

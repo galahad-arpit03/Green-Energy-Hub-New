@@ -21,9 +21,7 @@ const Footer = () => {
             <h5><b>Quick Links</b></h5>
             <ul className="list-unstyled">
               <li><Link className="text-white" to="/renewable-energy-directory">Renewable Energy Directory</Link></li>
-              <li><Link className="text-white" to="/renewable-energy">Renewable Energy</Link></li>
-              <li><Link className="text-white" to="/educational-resources">Educational Resources</Link></li>
-              <li><Link className="text-white" to="/community-projects">Community Projects</Link></li>
+        
               <li><Link className="text-white" to="/about-us">About Us</Link></li>
             </ul>
           </div>
@@ -31,7 +29,7 @@ const Footer = () => {
           {/* Contact Us Section */}
           <div className="col-md-4 mb-3">
             <h5> <b>Contact Us</b></h5>
-            <p><b>Email : </b><a href="mailto:info@example.com" className="text-white">greenhubenergy@gmail.com</a></p>
+            <p><b>Email : </b><a href="mailto:info@example.com" className="text-white">energyhubgreen@gmail.com</a></p>
             <p><b>Phone : </b><a href="tel:+917697823349" className="text-white">+91 7697823349</a></p>
           </div>
         </div>
